@@ -110,7 +110,7 @@ async function update_server_info(server, info) {
             var channel = client.channels.cache.get(server.channel_name);
             channel.setName(parse(config.text_name, info.name));
         }
-        if (config.text_map) {
+        if (config.showmap) {
             var channel = client.channels.cache.get(server.channel_map);
             channel.setName(parse(config.text_map, info.map));
         }
