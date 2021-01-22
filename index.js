@@ -128,7 +128,7 @@ async function update_server_info(server, info) {
     }
 
 }
-var job = new CronJob('* * * * *', function() {
+var job = new CronJob('*/5 * * * *', function() {
     
         for (let server of config.servers) {
             let ip = server.ip;
